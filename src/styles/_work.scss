@@ -1,0 +1,153 @@
+.work {
+    .work-container {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.page-wide {
+    //width: calc(100% + 290px);
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+@media (min-width: 671px) {
+    .project-preview {
+        align-items: center;
+    }
+}
+
+.project-preview {
+    display: flex;
+}
+
+@media (min-width: 671px) {
+    .project-preview__media {
+        width: 60%;
+    }
+}
+
+@media (min-width: 671px) {
+    .project-preview__content {
+        width: 40%;
+        padding-left: 60px;
+    }
+    .project-preview__desc {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 671px){
+    .project-preview__title {
+        margin-bottom: 15px;
+    }
+    .project-preview__meta {
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .project-preview__desc, .txt-large {
+        font-size: 22px;
+        font-size: 1.375rem;
+    }
+}
+
+@media (min-width: 1025px){
+    .list.list--regular .list__item, .notice__desc, p, li, .txt-regular {
+        font-size: 20px;
+        font-size: 1.25rem;
+    }
+}
+
+.list__item:not(:last-child) {
+    margin-bottom: 5px;
+}
+
+.list__item {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+@media (min-width: 1025px) {
+    .list__item, .link-list__item, .post-preview__meta, .wysiwyg figcaption, .txt-small {
+        font-size: 18px;
+        font-size: 1.125rem;
+    }
+}
+
+.list__item, .post-preview__meta, .wysiwyg figcaption, .txt-fade {
+    color: #5e5e5e;
+}
+
+@media not all and (hover: none), (-ms-high-contrast:active), screen and (-ms-high-contrast:none)   {
+    .btn:not(.btn--disabled) {
+        transition: all ease .35s;
+    }
+}
+
+@media (min-width: 501px) {
+    .btn {
+        font-size: 16px;
+        font-size: 1rem;
+        padding: 17px 25px;
+    }
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    border-radius: 1000px;
+    border: none;
+    background: #4b6cc1;
+    font-family: Rubik,sans-serif;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+}
+
+a {
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    color: #4b6cc1;
+}
+
+@media not all and (hover: none), (-ms-high-contrast:active), screen and (-ms-high-contrast:none) {
+    .project-preview__media a img {
+        transition: transform ease .35s;
+    }
+}
+
+.project-preview__media img {
+    width: 100%;
+    display: block;
+}
+
+.project-preview__media img, .header__section--media img, .wysiwyg figure img, .feature-media img {
+    box-shadow: 0 1px 5px #00000008, 0 5px 30px #0000001a;
+    border-radius: 20px;
+}
+
+img, picture {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (min-width: 1025px) {
+    .mb-large {
+        margin-bottom: 60px;
+    }
+}
+
+.list__item:before {
+    width: 15px;
+    height: 15px;
+    margin-right: 5px;
+    opacity: .6;
+    content: "";
+    background: url("../assets/images/caret-right.svg") 0 0/15px no-repeat;
+}
